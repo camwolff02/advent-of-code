@@ -73,7 +73,7 @@ fn main() {
 
     // Solving the puzzle
     let (left, right) = parse_puzzle(&puzzle);
-    println!("left: {:?}\nright: {:?}", left, right);
+    println!("left: {:?}\nright: {:?}", left, right)
     println!("difference: {:?}", l1_distance(&left, &right));
     println!("similarity: {:?}", similarity(&left, &right));
 }
