@@ -1,6 +1,6 @@
 use std::{env, fs};
 
-pub fn load_puzzle() -> String {
+pub fn load_puzzle_file() -> String {
     let puzzle_folder = "puzzle/";
     let args: Vec<String> = env::args().collect();
     let filename = if args.len() > 1 {&args[1]} else {"test1.txt"};

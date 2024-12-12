@@ -85,7 +85,7 @@ fn find_word_in_one_direction(puzzle: &Vec<Vec<char>>, row: usize, col: usize, w
 }
 
 fn main() {
-    let puzzle_raw = parser::load_puzzle();
+    let puzzle_raw = puzzle_files::load_puzzle_file();
     let puzzle =  create_puzzle_grid(&puzzle_raw);
 
     let word = "XMAS";
